@@ -4,12 +4,13 @@
 
 ## Description
 
-
+  This program is an online madlibs page that allows the user to select one of two madlibs forms to fill in and then generates a hilarious story with the words the user chooses. It was created primarily using C# and .NET, and is the first major project in the May 2020 full-time Epicodus course to integrate our new knowledge of C# with HTML user interfaces.
 
 ## Languages & Technologies Used:
 
   ### Programming Languages & Libraries
   * C#
+  * HTML
   * .NET
 
   ### Operating Systems & Programs
@@ -23,7 +24,7 @@
 ## Installation
 
   1.  Download a web browser, such as Apple Safari, Brave, Google Chrome, Microsoft Edge, Mozilla Firefox, or Yandex.
-  2.  Navigate to [repo name].
+  2.  Navigate to https://github.com/taylorsomers/CSharpMadlibs.
   3.  Click the green "Clone or download" button at the right of the screen.
   4.  Select "Download ZIP."
   5.  Use a file extractor or unzip program (such as PeaZip, Unzipper, WinZip, Zipware, or 7-ZIP) to extract the ZIP files onto your computer.
@@ -32,13 +33,6 @@
   8.  Open your computer's terminal and navigate to the directory bearing the name of the program and containing the top level subdirectories and files.
   9.  Enter the command "dotnet build" in the terminal.
   10. Enter the command "dotnet run" in the terminal. The program should begin to run in the console.
-  
-
-## Specifications
-
-  | Program Behavior | Example Behavior | Example Output |
-  | ----------- | ----------- | ----------- |
-  |  |  |  |
 
 
 ## Known Bugs
