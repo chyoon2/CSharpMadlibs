@@ -8,18 +8,18 @@ namespace Madlibs.Controllers
     [HttpGet("/form")]
     public ActionResult Form() { return View(); }
 
-    [Route("/")]
+    [HttpGet("/")]
     public ActionResult Madpage() { 
       MadlibsWords myWord = new MadlibsWords();
-      myWord.Noun = "Garage Door";
+      // myWord.Noun = "Garage Door";
       return View(myWord);
     }
-    [Route("/madform")]
+    [HttpPost("/madform")]
     public ActionResult Madform(string noun)
     {
       MadlibsWords myWord = new MadlibsWords();
       myWord.Noun = noun;
-      return View(myWord);
+      return View("Madpage", myWord);
     }
 
   }
