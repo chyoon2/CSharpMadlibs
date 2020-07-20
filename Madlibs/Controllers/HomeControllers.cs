@@ -5,8 +5,8 @@ namespace Madlibs.Controllers
 {
   public class HomeController : Controller
   {
-    [HttpGet("/form")]
-    public ActionResult Form() { return View(); }
+    [HttpGet("/zooform")]
+    public ActionResult ZooForm() { return View(); }
 
     [HttpGet("/")]
     public ActionResult Madpage() { 
@@ -14,8 +14,8 @@ namespace Madlibs.Controllers
       // myWord.Noun = "Garage Door";
       return View(myWord);
     }
-    [HttpPost("/madform")]
-    public ActionResult Madform(string noun, string noun2, string noun3, string verb, string adverb, string adjective, string adjective2)
+    [HttpPost("/madzoo")]
+    public ActionResult MadZoo(string noun, string noun2, string noun3, string verb, string adverb, string adjective, string adjective2)
     {
       MadlibsWords myWord = new MadlibsWords();
       myWord.Noun = noun;
@@ -27,6 +27,5 @@ namespace Madlibs.Controllers
       myWord.Adjective2 = adjective2;
       return View(myWord);
     }
-
   }
 }
