@@ -1,6 +1,4 @@
-Madlibs/bin/
-Madlibs/obj/
-Madlibs.Tests/bin/
-Madlibs.Tests/obj/
+*/bin/
+*/obj/
 .DS_Store
-
+.vscode
