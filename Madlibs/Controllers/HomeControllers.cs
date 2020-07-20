@@ -5,11 +5,8 @@ namespace Madlibs.Controllers
 {
   public class HomeController : Controller
   {
-    [Route("/hello")]
-    public string Hello() { return "Hello friend!"; }
-    
-    [Route("/goodbye")]
-    public string Goodbye() { return "Goodbye friend."; }
+    [HttpGet(/form)]
+    public ActionResult Form() {} return View(); }
 
     [Route("/")]
     public ActionResult Madpage() { 
@@ -17,5 +14,13 @@ namespace Madlibs.Controllers
       myWord.Noun = "Garage Door";
       return View(myWord);
     }
+    [Route("/madform")]
+    public ActionResult Madform(string noun)
+    {
+      MadlibsWords myWord = new MadlibsWords();
+      myWord.Noun = noun;
+      return View(myWord);
+    }
+
   }
 }
