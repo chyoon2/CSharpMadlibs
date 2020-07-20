@@ -5,8 +5,8 @@ namespace Madlibs.Controllers
 {
   public class HomeController : Controller
   {
-    [HttpGet(/form)]
-    public ActionResult Form() {} return View(); }
+    [HttpGet("/form")]
+    public ActionResult Form() { return View(); }
 
     [Route("/")]
     public ActionResult Madpage() { 
