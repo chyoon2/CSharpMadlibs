@@ -7,8 +7,7 @@ namespace Madlibs.Controllers
   {
     [HttpGet("/")]
     public ActionResult Madpage() { 
-      MadlibsWords myWord = new MadlibsWords();
-      return View(myWord);
+    return View();
     }
 
     [HttpGet("/pizzaform")]
