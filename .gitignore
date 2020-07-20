@@ -1,0 +1,6 @@
+Madlibs/bin/
+Madlibs/obj/
+Madlibs.Tests/bin/
+Madlibs.Tests/obj/
+.DS_Store
+
